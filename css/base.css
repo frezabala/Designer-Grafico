@@ -1,0 +1,133 @@
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #337AAC;
+     --cor-fonte: #ffffff;
+    --cor-fundo:  #0D4C82;
+    --font-base: 'Arial', sans-serif;
+    --small: 12px;
+    --regular: 30px;
+    --xLarge: 100px;
+    
+}
+
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+       margin: 0;
+      padding: 0;
+      background-color: var(--cor-primaria)
+  }
+
+  @font-face {
+    font-family: Homes;
+    src: url(./font/Homestone.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+
+  @font-face {
+    font-family: vogue;
+    src: url(./font/Vogue.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+  
+  header a {
+    font-family: 'vogue' ;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+  }
+
+     
+  .show {
+    display: none;
+  }
+  
+  
+  nav {
+    display: flex;
+    gap: 10px;
+    transition: max-height 0.5s ease, opacity 0.5 ease;
+  }
+  
+  
+  @media (max-width: 1125px) {
+  
+  
+    header {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    
+    .show {
+      display: flex;
+    }
+
+    .card{
+      display: flex;
+
+
+    }
+  
+  
+    nav{
+    
+    
+      flex-direction: column;
+      align-items: center;
+      max-height: 0;
+      opacity:0;
+      width: 100%;
+      transition: max-height 0.5s ease, opacity 1s ease;
+  
+  
+  }
+  
+    nav.ativo {
+      max-height: 500px; 
+      opacity: 1;
+    }
+  }
+
+  img{
+    max-width: 100%;
+    height: 60vh;
+    margin: 0;
+
+  }
+
+  h1,  h3,  h6{
+    color: var(--cor-fonte);
+    font-family: 'vogue';
+    margin: 20px;
+    
+  }
+
+  h1{
+    font-family: 'Homes';
+    color: var(--cor-fonte);
+
+  }
+
+  h5{
+    
+font-family: Georgia, 'Times New Roman', Times, serif;  }
+
+h2{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 20px;
+    
+
+}
+
+
+
+body{
+   background-color: black;
+}
