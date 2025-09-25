@@ -2,10 +2,9 @@
     flex-wrap: wrap;
     background-color:rgb(126, 126, 126);
     width: 20vw;
-    border: 1px solid rgba(0, 0, 0, 0.658);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.568);
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
     transition: transform 1s ease;
 
 }
@@ -32,6 +31,9 @@
     background-position: center;
   
 }
+.hero h2 {
+  text-shadow: #0073ff 2px 3px 2px;
+}
 
 
 .carousel-item {
@@ -51,5 +53,9 @@
     transform: translateY(-50%);
 }
 
+
+h5{
+     text-shadow: #000000 2px 3px 2px;
+}
 
 
